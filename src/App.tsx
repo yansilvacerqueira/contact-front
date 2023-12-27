@@ -1,5 +1,3 @@
-function App() {
+export const App = () => {
   return <>xereka</>;
-}
-
-export default App;
+};
