@@ -6,6 +6,8 @@ import defaultTheme from './assets/styles/themes/default';
 import { Container } from './styles';
 
 import { Header } from './components/Header/Header';
+import { ContactsList } from './components/ContactsList/ContactsList';
+
 export const App = () => {
   return (
     <>
@@ -13,6 +15,7 @@ export const App = () => {
         <GlobalStyles />
         <Container>
           <Header />
+          <ContactsList />
         </Container>
       </ThemeProvider>
     </>
