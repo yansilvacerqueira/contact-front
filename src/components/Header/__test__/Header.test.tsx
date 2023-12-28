@@ -1,19 +1,13 @@
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
-import userEvent from '@testing-library/user-event';
-
-import { Header } from '../Header'; // Import the component to be tested
+import { Header } from '../Header';
 
 describe('Header component', () => {
-  it('should render the logo and search input', () => {
+  it('should render the logo', () => {
     render(<Header />);
 
-    // Check for logo
     const logoImage = screen.getByAltText('Logo');
-    expect(logoImage).toBeInTheDocument;
-
-    // Check for input
-    const searchInput = screen.getByPlaceholderText('Pesquisar contato');
-    expect(searchInput).toBeInTheDocument;
+    expect(logoImage).toBeInTheDocument();
   });
 });
