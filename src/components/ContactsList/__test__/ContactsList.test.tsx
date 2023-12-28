@@ -33,4 +33,21 @@ describe('Header component', () => {
 
     expect(novoContatoLink).toHaveProperty('href', 'http://localhost/');
   });
+
+  it('should render the card with data correct', () => {
+    const name = screen.getByText('Yan Cerqueira');
+    const category = screen.getByText('Instagram');
+    const email = screen.getByText('yansilvacerqueira@outlook.com');
+    const cellPhone = screen.getByText('(24)99924-2321');
+
+    const editButton = screen.getByAltText('Edit Icon');
+    const deleteButton = screen.getByAltText('Delete Icon');
+
+    expect(name).toBeInTheDocument;
+    expect(category).toBeInTheDocument;
+    expect(email).toBeInTheDocument;
+    expect(cellPhone).toBeInTheDocument;
+    expect(editButton).toBeInTheDocument;
+    expect(deleteButton).toBeInTheDocument;
+  });
 });
