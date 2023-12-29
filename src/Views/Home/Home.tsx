@@ -9,12 +9,12 @@ import {
 import arrow from '../../assets/images/arrowIcon.svg';
 import edit from '../../assets/images/editIcon.svg';
 import trash from '../../assets/images/deleteIcon.svg';
-import { Modal } from '../../components/Modal/Modal';
+import { Loader } from '../../components/Loader/Loader';
 
 export const Home = () => {
   return (
     <>
-      <Modal danger />
+      <Loader />
       <InputContainer>
         <input type="text" placeholder="Pesquisar contato" />
       </InputContainer>
