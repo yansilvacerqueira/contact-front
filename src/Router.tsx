@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import { Home } from './Views/home/Home';
-import { EditContact } from './Views/editContact/EditContact';
-import { NewContact } from './Views/newContact/NewContact';
+import { Home } from './Views/Home/Home';
+import { EditContact } from './Views/EditContact/EditContact';
+import { NewContact } from './Views/NewContact/NewContact';
 
 export const Router = (): React.ReactElement => {
   return (
