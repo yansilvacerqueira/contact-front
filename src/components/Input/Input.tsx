@@ -1,6 +1,11 @@
-import styled from 'styled-components';
+import { FC } from 'react';
+import styled, { css } from 'styled-components';
 
-export default styled.input`
+type InputProps = {
+  error?: boolean;
+};
+
+export const Input: FC<InputProps | any> = styled.input`
   width: 100%;
   background: #fff;
 
@@ -16,4 +21,11 @@ export default styled.input`
   &:focus {
     border-color: 2px solid ${({ theme }) => theme.primary.main};
   }
+
+  ${({ theme, error }) =>
+    error &&
+    css`
+      color: ${theme.danger.light};
+      border-color: 2px solid ${({ theme }) => theme.primary.main};
+    `}
 `;

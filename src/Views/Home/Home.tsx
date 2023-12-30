@@ -14,7 +14,6 @@ import { Loader } from '../../components/Loader/Loader';
 export const Home = () => {
   return (
     <>
-      <Loader />
       <InputContainer>
         <input type="text" placeholder="Pesquisar contato" />
       </InputContainer>
